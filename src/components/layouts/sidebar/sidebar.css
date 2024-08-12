@@ -1,0 +1,181 @@
+ /*--------------------------------------------------------------
+    # Sidebar
+    --------------------------------------------------------------*/
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 200px;
+        z-index: 996;
+        transition: all 0.3s;
+        padding: 20px;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--accent-color) transparent;
+        background-color: var(--default-color);
+      }
+      
+      /* @media (max-width: 1199px) {
+        .sidebar {
+          left: -300px;
+        }
+      } */
+      
+      .sidebar::-webkit-scrollbar {
+        width: 5px;
+        height: 8px;
+        background-color: var(--background-color);
+      }
+      
+      .sidebar::-webkit-scrollbar-thumb {
+        background-color: var(--accent-color-hover);
+      }
+      
+      @media (min-width: 1200px) {
+        #main,
+        #header,
+        #footer {
+          margin-left: 200px;
+        }
+      }
+      
+      /* @media (max-width: 1199px) {
+        .toggle-sidebar .sidebar {
+          left: 0;
+        }
+      } */
+      
+      .sidebar-nav {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      
+      .sidebar-nav li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      
+      .sidebar-nav .nav-item {
+        margin-bottom: 5px;
+      }
+      
+      .sidebar-nav .nav-heading {
+        font-size: 11px;
+        text-transform: uppercase;
+        color: var(--default-color);
+        font-weight: 600;
+        margin: 10px 0 5px 15px;
+      }
+      
+      .sidebar-nav .nav-link {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--surface-color);
+        transition: 0.3;
+        background: var(--default-color);
+        padding: 10px 15px;
+        border-radius: 4px;
+      }
+      
+      .sidebar-nav .nav-link i {
+        font-size: 16px;
+        margin-right: 10px;
+        color: var(--contrast-color);
+      }
+      
+      .sidebar-nav .nav-link.collapsed {
+        color: var(--accent-color);
+        background: var(--background-color);
+      }
+      
+      .sidebar-nav .nav-link.collapsed i {
+        color: var(--contrast-color);
+      }
+      
+      .sidebar-nav .nav-link:hover {
+        color: var(--accent-color-hover);
+        background: var(--background-color);
+      }
+      
+      .sidebar-nav .nav-link:hover i {
+        color: var(--accent-color-hover);
+      }
+      
+      .sidebar-nav .nav-link .bi-chevron-down {
+        margin-right: 0;
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .sidebar-nav .nav-link:not(.collapsed) .bi-chevron-down {
+        transform: rotate(180deg);
+      }
+      
+      .sidebar-nav .nav-content {
+        padding: 5px 0 0 0;
+        margin: 0;
+        list-style: none;
+      }
+      
+      .sidebar-nav .nav-content a {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--accent-color);
+        transition: 0.3;
+        padding: 10px 0 10px 40px;
+        transition: 0.3s;
+      }
+      
+      .sidebar-nav .nav-content a i {
+        font-size: 6px;
+        margin-right: 8px;
+        line-height: 0;
+        border-radius: 50%;
+      }
+      
+      .sidebar-nav .nav-content a:hover,
+      .sidebar-nav .nav-content a.active {
+        color: var(--accent-color);
+      }
+      
+      .sidebar-nav .nav-content a.active i {
+        background-color: var(--accent-color);
+      }
+    
+      
+    .toggle-sidebar #main,
+    .toggle-sidebar #header,
+    .toggle-sidebar #footer {
+      margin-left: 50px;
+    }
+    
+    .toggle-sidebar .sidebar {
+      width: 50px;
+      padding-top: 16px !important;
+    }
+    
+    .toggle-sidebar .lg-screen-logo {
+      display: none !important;
+    }
+    
+    .toggle-sidebar .sm-screen-logo {
+      display: flex !important;
+    }
+    
+    .toggle-sidebar .sidebar-nav .nav-link {
+      padding: 10px 0;
+    }
+    .toggle-sidebar .sidebar-nav .nav-link span {
+      display: none;
+    }
+    .toggle-sidebar .sidebar-nav .nav-link:hover {
+      color: var(--accent-color-hover);
+      background: var(--heading-color);
+    }
+    
